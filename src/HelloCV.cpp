@@ -50,7 +50,7 @@ int countRed = 0;
 vector<int> curXs;
 vector<int> curYs;
 
-
+bool lastOnce = false;
 
 void DoubleClick(int x, int y)
 {
@@ -416,6 +416,9 @@ int main(int argc, char** argv)
 
 			int posX = dM10 / dArea;
 			int posY = dM01 / dArea;
+			
+			posX = (posX + iLastX) / 2;
+			posY = (posY + iLastY) / 2;
 
 			if (iLastX >= 0 && iLastY >= 0 && posX >= 0 && posY >= 0)
 			{
@@ -459,6 +462,7 @@ int main(int argc, char** argv)
 
 			}
 			else if (currentlyHitting == 2) {
+				//posX += 150;
 				SetCursorPos(cursX, cursY);
 				// left down 
 				Input.type = INPUT_MOUSE;
@@ -471,6 +475,7 @@ int main(int argc, char** argv)
 				Input.type = INPUT_MOUSE;
 				Input.mi.dwFlags = MOUSEEVENTF_LEFTUP;
 				::SendInput(1, &Input, sizeof(INPUT));
+
 				/*if (curXs.size() > 35) {
 					INPUT buffer = { 0 };
 
