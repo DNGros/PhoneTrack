@@ -1,0 +1,5 @@
+PROJECT( helloworld_project ) 
+SET(OpenCV_DIR "C:\\Users\\dgros_000\\opencv\\build\\x86\\vc12\\lib")
+FIND_PACKAGE( OpenCV REQUIRED ) 
+ADD_EXECUTABLE( helloworld HelloCV.cpp ) 
+TARGET_LINK_LIBRARIES( helloworld ${OpenCV_LIBS} )

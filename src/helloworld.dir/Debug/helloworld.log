@@ -1,0 +1,11 @@
+﻿Build started 9/19/2015 3:59:12 PM.
+     1>Project "C:\Users\dgros_000\workspace\HelloCV\src\helloworld.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /IC:\Users\dgros_000\opencv\build\x86\vc12\lib\include /IC:\Users\dgros_000\opencv\build\x86\vc12\lib\include\opencv /Zi /nologo /W3 /WX- /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"helloworld.dir\Debug\\" /Fd"helloworld.dir\Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt C:\Users\dgros_000\workspace\HelloCV\src\HelloCV.cpp
+         HelloCV.cpp
+     1>C:\Users\dgros_000\workspace\HelloCV\src\HelloCV.cpp(8): fatal error C1083: Cannot open include file: 'opencv2/opencv.hpp': No such file or directory
+     1>Done Building Project "C:\Users\dgros_000\workspace\HelloCV\src\helloworld.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.25
