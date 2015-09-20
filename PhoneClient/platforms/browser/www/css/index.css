@@ -1,0 +1,30 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*@-webkit-keyframes color-change {
+    0% {background-color: red;}
+    50% {background-color: yellow;}
+    75% {background-color: green;}
+    100% {background-color: blue;}
+}*/
+
+
+body {
+    height: 100%;
+    width: 100%;
+    color: firebrick;
+    background-color: red;
+    margin: 0px;
+    padding: 0px;
+    //-webkit-animation: color-change 10s linear 2s infinite alternate;
+}
+
+
+#target {
+    height: 100%;
+    width: 100%;
+}
